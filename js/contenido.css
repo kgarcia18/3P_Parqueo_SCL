@@ -1,0 +1,100 @@
+.contenido {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.contenido .caja {
+    width: 50%;
+    max-height: 60rem;
+    border-radius: 3rem;
+    background-color: rgb(252, 209, 145);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.caja span {
+    font-size: 25rem;
+}
+.caja h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+.entrada input, textarea {
+    padding: 1rem;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    outline: none;
+}
+.entrada {
+    width: 40%;
+    max-height: 60rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 6rem);
+    gap: 1rem;
+
+    align-content: center;
+    margin-bottom: 4rem;
+}
+.entrada span {
+    font-size: 3rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.entrada .placa {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    font-size: 3rem;
+    font-weight: 500;
+}
+.entrada .tiempo {
+    font-size: 2rem;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.entrada .comentario {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    font-size: 1.6rem;
+    resize: none;
+}
+.entrada button {
+    grid-column-start: 4;
+
+}
+
+@media screen and (max-width:760px) {
+    .contenido {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        gap: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    .contenido .caja {
+        width: 100%;
+    }
+
+    .contenido .entrada {
+        width: 100%;
+    }
+}
